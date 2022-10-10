@@ -1,8 +1,8 @@
 import './App.css'
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/layouts/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer';
+import Footer from './components/layouts/Footer';
 
 
 class App extends Component {
