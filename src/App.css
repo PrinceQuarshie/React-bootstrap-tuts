@@ -8,7 +8,6 @@
 
 form,
 .btn {
-  /* display: grid; */
   gap: 2.5rem;
 }
 
@@ -17,10 +16,13 @@ form,
 }
 
 .nav-link {
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: 0.9rem;
 }
 
-.home-icon {
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  border: none;
 }

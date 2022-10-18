@@ -1,6 +1,8 @@
 import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
+import { FaBars } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -17,25 +19,27 @@ function Navbar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span>
+            <FaBars style={{ color: '#fff'}}/>
+        </span>
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav m-auto">
           <li className="nav-item active">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link className="nav-link text-white text-uppercase ml-5" to="/">
               Home <AiOutlineHome className="home-icon"/>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link className="nav-link text-white text-uppercase ml-5" to="/news">
               news
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white text-uppercase ml-5" href="#">
+            <Link className="nav-link text-white text-uppercase ml-5" to="/contacts">
               contact us
-            </a>
+            </Link>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 ms-auto d-flex">
